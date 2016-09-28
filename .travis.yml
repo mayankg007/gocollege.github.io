@@ -1,4 +1,5 @@
 language: php
+script: echo 0
 deploy:
   provider: s3
   access_key_id: AKIAJ3E4K3KNMNOKSSZA
