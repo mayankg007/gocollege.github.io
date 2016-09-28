@@ -1,4 +1,4 @@
-language: php
+language: ruby
 script: echo 0
 deploy:
   provider: s3
@@ -9,5 +9,5 @@ deploy:
   skip_cleanup: true
   region: ap-south-1
   on:
-    repo: shalzz/gocollege-web
+    repo: Shalzz/gocollege-web
     branch: master
