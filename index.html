@@ -77,22 +77,7 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>Connect with other students to share a ride to college!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup galaxy_s3 portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Sign me up!</a>
                         </div>
                     </div>
                 </div>
@@ -105,13 +90,16 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available for android devices! Download now to get started!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="https://play.google.com/store/apps/details?id=in.eightbitlabs.gocollege">
-                          <img src="img/google-play-badge.svg" alt="">
-                        </a>
-                        <!-- <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a> -->
-                    </div>
+                    <p>Signup to be the first to know when we release or better yet get early access</p>
+                    <form class="signup_form" role="form" method="POST" action="https://api.kickofflabs.com/v1/1905/subscribe">
+                      <input type="hidden" name="return_url" value="http://kickofflabs.com">
+                      <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                        <input class="subscribe-input only-email required" id="email" name="email" placeholder="Your email" type="email" data-label-text="Email" />
+                      </div>
+                      <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                        <button class='btn btn-submit btn-xl subscribe-submit' id="submit_button" name="submit" type="submit">Get Early Access</button>
+                      </div>
+                    </form>
                 </div>
             </div>
         </div>
