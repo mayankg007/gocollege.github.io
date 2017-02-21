@@ -37,6 +37,48 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+<style type="text/css">
+.form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+   
+}
+</style>
+    
+
 </head>
 
 <body id="page-top">
@@ -91,15 +133,14 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Discover what all the buzz is about!</h2>
                     <p>Signup to be the first to know when we release or better yet get early access</p>
-                    <form class="signup_form" role="form" method="POST" action="https://api.kickofflabs.com/v1/1905/subscribe">
-                      <input type="hidden" name="return_url" value="http://kickofflabs.com">
+                    <div class="form-style-5">
+                    <form role="form" method="POST" action="https://api.kickofflabs.com/v1/1905/subscribe">
+                      <input id="email" name="email" placeholder="Your email" type="email" data-label-text="Email" />
                       <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                        <input class="subscribe-input only-email required" id="email" name="email" placeholder="Your email" type="email" data-label-text="Email" />
-                      </div>
-                      <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                        <button class='btn btn-submit btn-xl subscribe-submit' id="submit_button" name="submit" type="submit">Get Early Access</button>
+                        <button class='btn btn-submit btn-xl subscribe-submit' id="submit_button" name="submit" type="submit" style="background:#e97259;">Get Early Access</button>
                       </div>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
